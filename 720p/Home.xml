@@ -665,7 +665,7 @@
 				<control type="group" id="600">
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 					<control type="button" id="601">
-						<left>10</left>
+						<left>40</left>
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
@@ -679,7 +679,7 @@
 						<onclick>ChannelDown</onclick>
 					</control>
 					<control type="button" id="602">
-						<left>40</left>
+						<left>70</left>
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
@@ -693,7 +693,7 @@
 						<onclick>ChannelUp</onclick>
 					</control>
 					<control type="button" id="603">
-						<left>70</left>
+						<left>100</left>
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
@@ -708,7 +708,7 @@
 						<onclick>PlayerControl(Stop)</onclick>
 					</control>
 					<control type="togglebutton" id="604">
-						<left>100</left>
+						<left>130</left>
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
@@ -719,28 +719,12 @@
 						<alttexturefocus>OSDPlayFO.png</alttexturefocus>
 						<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
 						<onleft>603</onleft>
-						<onright>605</onright>
+						<onright>606</onright>
 						<onup>9003</onup>
 						<ondown>9000</ondown>
 						<onclick>PlayerControl(Play)</onclick>
 						<enable>Player.PauseEnabled</enable>
 						<animation effect="fade" start="100" end="30" time="75" condition="!Player.PauseEnabled">Conditional</animation>
-					</control>
-					<control type="button" id="605">
-						<left>130</left>
-						<top>2</top>
-						<width>30</width>
-						<height>30</height>
-						<label/>
-						<texturefocus>OSDRadioRDSFO.png</texturefocus>
-						<texturenofocus>OSDRadioRDSNF.png</texturenofocus>
-						<onleft>604</onleft>
-						<onright>606</onright>
-						<onup>9003</onup>
-						<ondown>9000</ondown>
-						<onclick>ActivateWindow(PVRRadioRDSInfo)</onclick>
-						<enable>RDS.HasRadiotextPlus</enable>
-						<animation effect="fade" start="100" end="30" time="75" condition="!RDS.HasRadiotextPlus">Conditional</animation>
 					</control>
 					<control type="button" id="606">
 						<left>160</left>
@@ -750,7 +734,7 @@
 						<label/>
 						<texturefocus>OSDRecordOffFO.png</texturefocus>
 						<texturenofocus>OSDRecordOffNF.png</texturenofocus>
-						<onleft>605</onleft>
+						<onleft>604</onleft>
 						<onright>607</onright>
 						<onup>9003</onup>
 						<ondown>9000</ondown>
